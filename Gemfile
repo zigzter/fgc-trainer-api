@@ -2,6 +2,12 @@ source "https://rubygems.org"
 
 ruby "3.0.5"
 
+# AWS Cognito
+gem 'aws-sdk-cognitoidentity'
+gem 'aws-sdk-cognitoidentityprovider'
+
+gem 'figaro'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
 
