@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Cognito
   @client = Aws::CognitoIdentityProvider::Client.new
 

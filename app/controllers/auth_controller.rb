@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AuthController < ApplicationController
   def sign_in
     user = {
@@ -5,7 +7,7 @@ class AuthController < ApplicationController
       PASSWORD: params[:password]
     }
     begin
-      resp = Cognito.authenticate(user).authentication_result
+      resp = Cognito.authenticate(user)
     rescue StandardError => e
       resp = e
     end
